@@ -52,10 +52,11 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(skillsSection);
 
 // Gestion du formulaire de contact
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
     
     // Récupérer les valeurs du formulaire
     const formData = new FormData(this);
@@ -82,8 +83,66 @@ contactForm.addEventListener('submit', function(e) {
         console.error(error);
     });
 });
+}
 
 // Animation au chargement de la page
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
+
+// Scroll Reveal Animation
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // revealObserver.unobserve(entry.target); // Optional: animate only once
+        }
+    });
+}, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Typing Text Effect
+const typedTextSpan = document.querySelector(".typing-text");
+if (typedTextSpan) {
+    const cursorSpan = document.createElement("span");
+    cursorSpan.classList.add("cursor");
+    cursorSpan.innerHTML = "&nbsp;";
+    typedTextSpan.parentNode.appendChild(cursorSpan);
+
+    const textArray = ["Élève Ingénieur en Statistiques et Économie", "Passionné de Data Science", "Créateur de Solutions Analytiques"];
+    const typingDelay = 100;
+    const erasingDelay = 60;
+    const newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            textArrayIndex++;
+            if(textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 500);
+        }
+    }
+
+    setTimeout(type, newTextDelay);
+}

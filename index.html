@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Barre de navigation -->
     <nav class="navbar">
@@ -14,8 +16,9 @@
             <a href="#" class="logo">SOMA<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
+                <li><a href="#formations">Formations & Certif</a></li>
                 <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="document/cv.pdf" download class="btn-download">CV <i class="fas fa-download"></i></a></li>
             </ul>
@@ -34,28 +37,30 @@
                 <div class="hero-text">
                     <h4>Bonjour, je suis</h4>
                     <h1>Ben Idriss Diloma SOMA</h1>
-                    <h3>Élève Ingénieur  en Statistiques et économie </h3>
-                    <p>Passionné par l'analyse des données et l'intelligence artificielle, je transforme les données brutes en insights actionnables.</p>
+                    <h3><span class="typing-text"></span></h3>
+                    <p>Passionné par l'analyse des données et l'intelligence artificielle, je transforme les données
+                        brutes en insights actionnables.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn-primary">Mes Projets</a>
                         <a href="#contact" class="btn-secondary">Me Contacter</a>
                     </div>
                     <div class="social-icons">
-          
-                        <a href="https://www.linkedin.com/in/ben-idriss-soma-82a85a1b1" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                        <a href="https://www.linkedin.com/in/ben-idriss-soma-82a85a1b1" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
 
                         <a href="https://github.com/Ben10-som"><i class="fab fa-github"></i></a>
-                      
+
                     </div>
                 </div>
                 <div class="hero-image">
                     <img src="document/photo.png" alt="Ben Idriss SOMA" class="profile-img">
                     <div class="tech-stack">
-                        
+
                         <span>R</span>
                         <span>Python</span>
                         <span>Data Science</span>
-                       
+
                     </div>
                 </div>
             </div>
@@ -65,18 +70,21 @@
     <!-- À propos -->
     <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">À propos de moi</h2>
                 <p class="section-subtitle">Mon parcours et ma passion</p>
             </div>
             <div class="about-content">
-                <div class="about-image">
+                <div class="about-image reveal">
                     <img src="document/back.jpg" alt="À propos">
                 </div>
-                <div class="about-text">
-                    <h3>Ingénieur Statisticien économiste  en formation</h3>
-                    <p>Je m'appelle SOMA Ben Idriss, passionné par l'analyse et la valorisation des données. Actuellement étudiant en statistiques et économie à l'ENSAE de Dakar, je développe mes compétences en data science, notamment avec Python,R, SQL  .</p>
-                    <p>J'aime explorer les données ouvertes, participer à des compétitions  et transformer des idées en projets concrets à impact.</p>
+                <div class="about-text reveal">
+                    <h3>Ingénieur Statisticien économiste en formation</h3>
+                    <p>Je m'appelle SOMA Ben Idriss, passionné par l'analyse et la valorisation des données.
+                        Actuellement étudiant en statistiques et économie à l'ENSAE de Dakar, je développe mes
+                        compétences en data science, notamment avec Python,R, SQL .</p>
+                    <p>J'aime explorer les données ouvertes, participer à des compétitions et transformer des idées en
+                        projets concrets à impact.</p>
                     <div class="about-details">
                         <div class="detail-item">
                             <i class="fas fa-graduation-cap"></i>
@@ -98,16 +106,234 @@
         </div>
     </section>
 
+    <!-- Formations & Certifications -->
+    <section id="formations" class="section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Formations & Certifications</h2>
+                <p class="section-subtitle">Mon parcours académique et professionnel</p>
+            </div>
+
+            <div class="formations-content reveal">
+                <h3 class="subsection-title"
+                    style="font-size: 1.5rem; margin-bottom: 30px; color: var(--primary-color);"><i
+                        class="fas fa-graduation-cap"></i> Mon Parcours</h3>
+                <div class="timeline"
+                    style="border-left: 3px solid var(--primary-color); padding-left: 25px; margin-left: 10px; margin-bottom: 60px;">
+                    <div class="timeline-item" style="position: relative; margin-bottom: 40px;">
+                        <div class="timeline-dot"
+                            style="position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: white; border: 4px solid var(--primary-color); border-radius: 50%; box-shadow: 0 0 0 4px rgba(37,99,235,0.2);">
+                        </div>
+                        <h4 style="font-size: 1.2rem; color: var(--dark-color);">ENSAE Dakar</h4>
+                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;">Élève Ingénieur
+                            Statisticien Économiste</h5>
+                        <span
+                            style="display: inline-block; background: rgba(37,99,235,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">2024
+                            - Présent</span>
+                        <p style="color: var(--gray-color);">Formation approfondie en data science, statistiques, et
+                            modélisation économique. Apprentissage pratique via des projets rigoureux.</p>
+                    </div>
+                    <div class="timeline-item" style="position: relative; margin-bottom: 40px;">
+                        <div class="timeline-dot"
+                            style="position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: white; border: 4px solid var(--primary-color); border-radius: 50%; box-shadow: 0 0 0 4px rgba(37,99,235,0.2);">
+                        </div>
+                        <h4 style="font-size: 1.2rem; color: var(--dark-color);">Classes Préparatoires - Ecole
+                            Polytechnique de Ouagadougou</h4>
+                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;">Mathématiques et
+                            Physique</h5>
+                        <span
+                            style="display: inline-block; background: rgba(37,99,235,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">2022
+                            - 2024</span>
+                        <p style="color: var(--gray-color);">Préparation intensive aux grandes écoles d'ingénieurs.
+                            Solide formation en sciences fondamentales (Mathématiques, Physique) et en informatique.</p>
+                    </div>
+                    <div class="timeline-item" style="position: relative;">
+                        <div class="timeline-dot"
+                            style="position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: white; border: 4px solid var(--primary-color); border-radius: 50%; box-shadow: 0 0 0 4px rgba(37,99,235,0.2);">
+                        </div>
+                        <h4 style="font-size: 1.2rem; color: var(--dark-color);">Complexe Scolaire Horizon International
+                            Ouaga</h4>
+                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;">Baccalauréat Série C
+                        </h5>
+                        <span
+                            style="display: inline-block; background: rgba(37,99,235,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">-
+                            2022</span>
+                        <p style="color: var(--gray-color);">Obtention du baccalauréat avec mention.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications-content reveal">
+                <h3 class="subsection-title"
+                    style="font-size: 1.5rem; margin-bottom: 30px; color: var(--primary-color);"><i
+                        class="fas fa-certificate"></i> Mes Certifications</h3>
+                <div class="certifications-grid">
+                    <!-- Certification 1 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Power BI et IA</h3>
+                            <p class="certif-issuer">Afri Ai Solutions </p>
+                            <a href="document/certifications/Attestation Formation Power et IA (1).pdf" target="_blank"
+                                class="btn-project" style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Certification 2 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Data Science Professional</h3>
+                            <p class="certif-issuer">IBM</p>
+                            <a href="document/certifications/IBM PROFESSIONAL CERTIFICATE .pdf" target="_blank"
+                                class="btn-project" style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Certification 3 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Data Analysis for Social Scientists</h3>
+                            <p class="certif-issuer">MITx Online</p>
+                            <a href="document/certifications/MITx Online _ Certificate for_ Data Analysis for Social Scientists.pdf"
+                                target="_blank" class="btn-project" style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Certification 4 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Evaluating Impact In Low and Middle countries </h3>
+                            <p class="certif-issuer">World Bank Group / edX</p>
+                            <a href="document/certifications/WBGx IEM01x Certificate _ edX.pdf" target="_blank"
+                                class="btn-project" style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Certification 5 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Certificat Data Tour</h3>
+                            <p class="certif-issuer">Data Afrique Hub</p>
+                            <a href="document/certifications/cerif_data_tour.png" target="_blank" class="btn-project"
+                                style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Certification 6 -->
+                    <div class="certif-card reveal">
+                        <div class="certif-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="certif-content">
+                            <h3>Développement Web CSS3</h3>
+                            <p class="certif-issuer">OpenClassrooms</p>
+                            <a href="document/certifications/dev_web_html_css_openclassroom.pdf" target="_blank"
+                                class="btn-project" style="margin-top: 10px;">Voir le certificat <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Mes Compétences</h2>
+                <p class="section-subtitle">Ce que je maîtrise</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-column reveal">
+                    <h3><i class="fas fa-laptop-code"></i> Techniques</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Machine Learning</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 25%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column reveal">
+                    <h3><i class="fas fa-users"></i> Personnelles</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Communication</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Travail d'équipe</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Adaptabilité</span>
+
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projets -->
     <section id="projects" class="section bg-light">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Mes Projets</h2>
                 <p class="section-subtitle">Découvrez mon travail</p>
             </div>
             <div class="projects-grid">
                 <!-- Projet 1 -->
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <img src="document/banque.png" alt="Application de transfert d'argent">
                     </div>
@@ -118,31 +344,33 @@
                             <span>Python</span>
                             <span>SQL</span>
                         </div>
-                        <a href="https://github.com/Ben10-som/Projet-gestion-banque---CPGE" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Ben10-som/Projet-gestion-banque---CPGE" class="btn-project">Voir le
+                            projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="document/yambel.jpg" alt="Application de transfert d'argent avec VBA ">
+                <!-- Projet 2 (VBA) -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/yambel.jpg" alt="Application de transfert d'argent avec VBA ">
+                    </div>
+                    <div class="project-content">
+                        <h3>Application de transfert d'argent </h3>
+                        <p>Projet developpé en première année de cycle ingénieur pour aider les multi-services à mieux
+                            gérer leur transactions .</p>
+                        <div class="project-tags">
+                            <span>VBA</span>
+                            <span>Excel</span>
+                            <span>Tableau de bord </span>
                         </div>
-                        <div class="project-content">
-                            <h3>Application de transfert d'argent </h3>
-                            <p>Projet developpé en première année de cycle ingénieur pour aider les multi-services à mieux gérer leur transactions .</p>
-                            <div class="project-tags">
-                                <span>VBA</span>
-                                <span>Excel</span>
-                                <span>Tableau de bord </span>
-                            </div>
-                            <a href="document/yambel.xlsm" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                        <a href="document/yambel.xlsm" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-        
-                
+
+
                 <!-- Projet 2 -->
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <img src="document/ouagahosto.png" alt="Rendez-vous médicaux">
                     </div>
@@ -154,12 +382,13 @@
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
-                        <a href="https://github.com/Ben10-som/OuagaHosto" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/Ben10-som/OuagaHosto" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                
+
                 <!-- Projet 3 -->
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
                         <img src="document/car.jpeg" alt="Analyse de données">
                     </div>
@@ -170,102 +399,116 @@
                             <span>Data Visualisation</span>
                             <span>Machine Learning</span>
                         </div>
-                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/car.jpeg" alt="Analyse de données">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse des ventes de voitures</h3>
+                        <p>Analyse d'une base de données sur les voitures aux États-Unis.</p>
+                        <div class="project-tags">
+                            <span>Data Visualisation</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/car.jpeg" alt="Analyse de données">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse des ventes de voitures</h3>
+                        <p>Analyse d'une base de données sur les voitures aux États-Unis.</p>
+                        <div class="project-tags">
+                            <span>Data Visualisation</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/car.jpeg" alt="Analyse de données">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse des ventes de voitures</h3>
+                        <p>Analyse d'une base de données sur les voitures aux États-Unis.</p>
+                        <div class="project-tags">
+                            <span>Data Visualisation</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/car.jpeg" alt="Analyse de données">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse des ventes de voitures</h3>
+                        <p>Analyse d'une base de données sur les voitures aux États-Unis.</p>
+                        <div class="project-tags">
+                            <span>Data Visualisation</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="document/car.jpeg" alt="Analyse de données">
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse des ventes de voitures</h3>
+                        <p>Analyse d'une base de données sur les voitures aux États-Unis.</p>
+                        <div class="project-tags">
+                            <span>Data Visualisation</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <a href="document//analyse de données voiture.ipynb" class="btn-project">Voir le projet <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Projet 4 -->
-       
-        
-    </section>
 
-    <!-- Compétences -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes Compétences</h2>
-                <p class="section-subtitle">Ce que je maîtrise</p>
-            </div>
-            <div class="skills-container">
-                <div class="skills-column">
-                    <h3><i class="fas fa-laptop-code"></i> Techniques</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>SQL</span>
-                            
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 40%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Machine Learning</span>
-                           
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 25%;"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skills-column">
-                    <h3><i class="fas fa-users"></i> Personnelles</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Communication</span>
-                           
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Travail d'équipe</span>
-                         
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Adaptabilité</span>
-                          
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section bg-dark">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Contactez-moi</h2>
                 <p class="section-subtitle">Travaillons ensemble</p>
             </div>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info reveal">
                     <h3>Discutons de votre projet</h3>
-                    <p>Je suis ouvert aux opportunités de collaboration, que ce soit pour des projets de data science, d'intelligence artificielle,   d'analyse de données ou de développement.</p>
+                    <p>Je suis ouvert aux opportunités de collaboration, que ce soit pour des projets de data science,
+                        d'intelligence artificielle, d'analyse de données ou de développement.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -284,11 +527,11 @@
                         <a href="www.linkedin.com/in/ben-idriss-soma-82a85a1b1"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/Ben10-som"><i class="fab fa-github"></i></a>
 
-                        
-                       
+
+
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xvgkrgon" method="POST">
+                <form class="contact-form reveal" action="https://formspree.io/f/xvgkrgon" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Votre nom" required>
                     </div>
@@ -301,7 +544,8 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Votre message" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Envoyer le message <i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="btn-primary">Envoyer le message <i
+                            class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
@@ -319,8 +563,9 @@
                     <h4>Liens rapides</h4>
                     <ul>
                         <li><a href="#about">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#formations">Formations & Certif</a></li>
                         <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#projects">Projets</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -346,5 +591,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
