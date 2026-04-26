@@ -581,6 +581,31 @@ a {
     color: var(--primary-color);
 }
 
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h4 {
+    font-size: 1.05rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    font-size: 0.85rem;
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
 .skill-item {
     margin-bottom: 20px;
 }
