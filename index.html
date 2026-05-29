@@ -15,11 +15,11 @@
         <div class="container">
             <a href="#" class="logo">SOMA<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#formations">Formations & Certif</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                <li><a href="#formations" data-i18n="nav_educations">Formations & Certif</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 <li><a href="document/cv.pdf" download class="btn-download">CV <i class="fas fa-download"></i></a></li>
             </ul>
             <div class="hamburger">
@@ -35,13 +35,13 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h4>Bonjour, je suis</h4>
+                    <h4 data-i18n="hero_greeting">Bonjour, je suis</h4>
                     <h1>Ben Idriss Diloma SOMA</h1>
                     <h3><span class="typing-text"></span></h3>
 
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">Mes Projets</a>
-                        <a href="#contact" class="btn-secondary">Me Contacter</a>
+                        <a href="#projects" class="btn-primary" data-i18n="hero_projects">Mes Projets</a>
+                        <a href="#contact" class="btn-secondary" data-i18n="hero_contact">Me Contacter</a>
                     </div>
                     <div class="social-icons">
 
@@ -70,33 +70,33 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">À propos de moi</h2>
-                <p class="section-subtitle">Mon parcours et ma passion</p>
+                <h2 class="section-title" data-i18n="about_title">À propos de moi</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">Mon parcours et ma passion</p>
             </div>
             <div class="about-content">
                 <div class="about-image reveal">
-                    <img src="document/back.jpg" alt="À propos">
+                    <img src="document/back.jpg" alt="À propos" data-i18n-alt="about_image_alt">
                 </div>
                 <div class="about-text reveal">
-                    <h3>Ingénieur Statisticien économiste en formation</h3>
-                    <p>Je m'appelle SOMA Ben Idriss, passionné par l'analyse et la valorisation des données.
+                    <h3 data-i18n="about_role">Ingénieur Statisticien économiste en formation</h3>
+                    <p data-i18n="about_paragraph_1">Je m'appelle SOMA Ben Idriss, passionné par l'analyse et la valorisation des données.
                         Actuellement étudiant en statistiques et économie à l'ENSAE de Dakar, je développe mes
                         compétences en data science, notamment avec Python,R, SQL .</p>
-                    <p>J'aime explorer les données ouvertes, participer à des compétitions et transformer des idées en
+                    <p data-i18n="about_paragraph_2">J'aime explorer les données ouvertes, participer à des compétitions et transformer des idées en
                         projets concrets à impact.</p>
                     <div class="about-details">
                         <div class="detail-item">
                             <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <h4>Éducation</h4>
-                                <p>ENSAE Dakar - Statistiques & Économie</p>
+                                <h4 data-i18n="about_education_title">Éducation</h4>
+                                <p data-i18n="about_education_desc">ENSAE Dakar - Statistiques & Économie</p>
                             </div>
                         </div>
                         <div class="detail-item">
                             <i class="fas fa-code"></i>
                             <div>
-                                <h4>Spécialités</h4>
-                                <p>Economie, Statistiques, Analyse de données, Machine learning </p>
+                                <h4 data-i18n="about_specialties_title">Spécialités</h4>
+                                <p data-i18n="about_specialties_desc">Economie, Statistiques, Analyse de données, Machine learning </p>
                             </div>
                         </div>
                     </div>
@@ -109,41 +109,41 @@
     <section id="formations" class="section bg-light">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Formations & Certifications</h2>
-                <p class="section-subtitle">Mon parcours académique et professionnel</p>
+                <h2 class="section-title" data-i18n="education_title">Formations & Certifications</h2>
+                <p class="section-subtitle" data-i18n="education_subtitle">Mon parcours académique et professionnel</p>
             </div>
 
             <div class="formations-content reveal">
                 <h3 class="subsection-title"
                     style="font-size: 1.5rem; margin-bottom: 30px; color: var(--primary-color);"><i
-                        class="fas fa-graduation-cap"></i> Mon Parcours</h3>
+                        class="fas fa-graduation-cap"></i> <span data-i18n="parcours_title">Mon Parcours</span></h3>
                 <div class="timeline"
                     style="border-left: 3px solid var(--primary-color); padding-left: 25px; margin-left: 10px; margin-bottom: 60px;">
                     <div class="timeline-item" style="position: relative; margin-bottom: 40px;">
                         <div class="timeline-dot"
                             style="position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: white; border: 4px solid var(--primary-color); border-radius: 50%; box-shadow: 0 0 0 4px rgba(37,99,235,0.2);">
                         </div>
-                        <h4 style="font-size: 1.2rem; color: var(--dark-color);">ENSAE Dakar</h4>
-                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;">Élève Ingénieur
+                        <h4 style="font-size: 1.2rem; color: var(--dark-color);" data-i18n="timeline_ensae_title">ENSAE Dakar</h4>
+                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;" data-i18n="timeline_ensae_subtitle">Élève Ingénieur
                             Statisticien Économiste</h5>
                         <span
                             style="display: inline-block; background: rgba(37,99,235,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">2024
                             - Présent</span>
-                        <p style="color: var(--gray-color);">Formation approfondie en data science, statistiques, et
+                        <p style="color: var(--gray-color);" data-i18n="timeline_ensae_text">Formation approfondie en data science, statistiques, et
                             modélisation économique. Apprentissage pratique via des projets rigoureux.</p>
                     </div>
                     <div class="timeline-item" style="position: relative; margin-bottom: 40px;">
                         <div class="timeline-dot"
                             style="position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: white; border: 4px solid var(--primary-color); border-radius: 50%; box-shadow: 0 0 0 4px rgba(37,99,235,0.2);">
                         </div>
-                        <h4 style="font-size: 1.2rem; color: var(--dark-color);">Classes Préparatoires - Ecole
+                        <h4 style="font-size: 1.2rem; color: var(--dark-color);" data-i18n="timeline_prep_title">Classes Préparatoires - Ecole
                             Polytechnique de Ouagadougou</h4>
-                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;">Mathématiques et
+                        <h5 style="color: var(--gray-color); margin-bottom: 8px; font-weight: 500;" data-i18n="timeline_prep_subtitle">Mathématiques et
                             Physique</h5>
                         <span
                             style="display: inline-block; background: rgba(37,99,235,0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">2022
                             - 2024</span>
-                        <p style="color: var(--gray-color);">Préparation intensive aux grandes écoles d'ingénieurs.
+                        <p style="color: var(--gray-color);" data-i18n="timeline_prep_text">Préparation intensive aux grandes écoles d'ingénieurs.
                             Solide formation en sciences fondamentales (Mathématiques, Physique) et en informatique.</p>
                     </div>
                     <div class="timeline-item" style="position: relative;">
@@ -317,14 +317,14 @@
     <section id="skills" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Mes Compétences</h2>
-                <p class="section-subtitle">Ce que je maîtrise</p>
+                <h2 class="section-title" data-i18n="skills_title">Mes Compétences</h2>
+                <p class="section-subtitle" data-i18n="skills_subtitle">Ce que je maîtrise</p>
             </div>
             <div class="skills-container">
                 <div class="skills-column reveal">
-                    <h3><i class="fas fa-laptop-code"></i> Techniques</h3>
+                    <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills_techniques">Techniques</span></h3>
                     <div class="skill-category">
-                        <h4>Analyse de données</h4>
+                        <h4 data-i18n="skill_data_analysis">Analyse de données</h4>
                         <div class="skill-tags">
                             <span>Python</span>
                             <span>R</span>
@@ -333,13 +333,13 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Visualisation</h4>
+                        <h4 data-i18n="skill_visualization">Visualisation</h4>
                         <div class="skill-tags">
                             <span>Power BI</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Collecte</h4>
+                        <h4 data-i18n="skill_collection">Collecte</h4>
                         <div class="skill-tags">
                             <span>KoboToolbox</span>
                             <span>ODK</span>
@@ -347,7 +347,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Développement web</h4>
+                        <h4 data-i18n="skill_web_development">Développement web</h4>
                         <div class="skill-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -356,7 +356,7 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Engineering</h4>
+                        <h4 data-i18n="skill_engineering">Engineering</h4>
                         <div class="skill-tags">
                             <span>VS Code</span>
                             <span>Git</span>
@@ -366,10 +366,10 @@
                 </div>
 
                 <div class="skills-column reveal">
-                    <h3><i class="fas fa-users"></i> Personnelles</h3>
+                    <h3><i class="fas fa-users"></i> <span data-i18n="skills_personal">Personnelles</span></h3>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Communication</span>
+                            <span data-i18n="skill_communication">Communication</span>
 
                         </div>
                         <div class="skill-bar">
@@ -378,7 +378,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Travail d'équipe</span>
+                            <span data-i18n="skill_teamwork">Travail d'équipe</span>
 
                         </div>
                         <div class="skill-bar">
@@ -387,7 +387,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Adaptabilité</span>
+                            <span data-i18n="skill_adaptability">Adaptabilité</span>
 
                         </div>
                         <div class="skill-bar">
@@ -403,8 +403,8 @@
     <section id="projects" class="section bg-light">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Mes Projets</h2>
-                <p class="section-subtitle">Découvrez mon travail</p>
+                <h2 class="section-title" data-i18n="projects_title">Mes Projets</h2>
+                <p class="section-subtitle" data-i18n="projects_subtitle">Découvrez mon travail</p>
             </div>
             <div class="projects-grid">
                 <!-- Projet : IZZI -->
@@ -413,14 +413,14 @@
                         <img src="document/projets/IZZI/izzi.png" alt="Projet IZZI">
                     </div>
                     <div class="project-content">
-                        <h3>Projet IZZI</h3>
-                        <p>IZZI est une application multifonction qui connecte producteurs et acheteurs,
+                        <h3 data-i18n="project_izzi_title">Projet IZZI</h3>
+                        <p data-i18n="project_izzi_text">IZZI est une application multifonction qui connecte producteurs et acheteurs,
                             avec ou sans internet, et accessible à tous les profils. Application qui a valu un prix lors
                             d'un Hackathon organisé par AIMS Senegal .</p>
                         <div class="project-tags">
                             <span>Web development, Impact</span>
                         </div>
-                        <a href="https://github.com/Ben10-som/agriconnect" class="btn-project">Voir le projet <i
+                        <a href="https://github.com/Ben10-som/agriconnect" class="btn-project" data-i18n="view_project">Voir le projet <i
                                 class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -433,13 +433,13 @@
                             alt="Data Warehouse for Sales Analysis">
                     </div>
                     <div class="project-content">
-                        <h3>Data Warehouse for Sales Analysis</h3>
-                        <p>Analyse des ventes via un entrepôt de données (Big Data).</p>
+                        <h3 data-i18n="project_bigdata_title">Data Warehouse for Sales Analysis</h3>
+                        <p data-i18n="project_bigdata_text">Analyse des ventes via un entrepôt de données (Big Data).</p>
                         <div class="project-tags">
                             <span>Big Data</span>
                             <span>Data Warehouse</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -450,13 +450,13 @@
                             alt="Prédiction d'émissions de CO2">
                     </div>
                     <div class="project-content">
-                        <h3>Prédiction d'émissions de CO2</h3>
-                        <p>Modèle de Machine Learning développé en Python pour la prédiction des émissions de CO2.</p>
+                        <h3 data-i18n="project_ml_title">Prédiction d'émissions de CO2</h3>
+                        <p data-i18n="project_ml_text">Modèle de Machine Learning développé en Python pour la prédiction des émissions de CO2.</p>
                         <div class="project-tags">
                             <span>Machine Learning</span>
                             <span>Python</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -467,13 +467,13 @@
                             alt="Dashboard Application de Collecte ODK">
                     </div>
                     <div class="project-content">
-                        <h3>Dashboard Application de Collecte ODK</h3>
-                        <p>Déploiement et visualisation des données collectées via ODK (Open Data Kit).</p>
+                        <h3 data-i18n="project_odk_title">Dashboard Application de Collecte ODK</h3>
+                        <p data-i18n="project_odk_text">Déploiement et visualisation des données collectées via ODK (Open Data Kit).</p>
                         <div class="project-tags">
                             <span>ODK</span>
                             <span>Dashboard</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -484,13 +484,13 @@
                             alt="Dashboard Power BI - Challenge ANIP">
                     </div>
                     <div class="project-content">
-                        <h3>Dashboard Power BI - Challenge ANIP</h3>
-                        <p>Tableau de bord interactif réalisé avec Power BI dans le cadre du challenge ANIP.</p>
+                        <h3 data-i18n="project_anip_title">Dashboard Power BI - Challenge ANIP</h3>
+                        <p data-i18n="project_anip_text">Tableau de bord interactif réalisé avec Power BI dans le cadre du challenge ANIP.</p>
                         <div class="project-tags">
                             <span>Power BI</span>
                             <span>Data Visualisation</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -500,15 +500,15 @@
                         <img src="document/projets/BDD/edudash.png" alt="Dashboard Éducatif">
                     </div>
                     <div class="project-content">
-                        <h3>Dashboard Éducatif (EduDash)</h3>
-                        <p>Projet de création d'un dashboard éducatif pour visualiser les données scolaires et améliorer
+                        <h3 data-i18n="project_bdd_title">Dashboard Éducatif (EduDash)</h3>
+                        <p data-i18n="project_bdd_text">Projet de création d'un dashboard éducatif pour visualiser les données scolaires et améliorer
                             la prise de décision dans le secteur de l'éducation.</p>
                         <div class="project-tags">
                             <span>Base de Données</span>
                             <span>Dashboard</span>
                             <span>SQL Server</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -519,13 +519,13 @@
                             alt="Optimisation de Réseaux 4G">
                     </div>
                     <div class="project-content">
-                        <h3>Optimisation de Réseaux 4G</h3>
-                        <p>Étude et optimisation des performances et de la couverture des réseaux 4G.</p>
+                        <h3 data-i18n="project_optimisation_title">Optimisation de Réseaux 4G</h3>
+                        <p data-i18n="project_optimisation_text">Étude et optimisation des performances et de la couverture des réseaux 4G.</p>
                         <div class="project-tags">
                             <span>Optimisation</span>
                             <span>Télécom</span>
                         </div>
-                        <a href="#" class="btn-project">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn-project" data-i18n="view_project">Voir le projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -535,13 +535,13 @@
                         <img src="document/projets/yambel/yambel_toole.png" alt="Application Yambel Toole">
                     </div>
                     <div class="project-content">
-                        <h3>Application Yambel Toole</h3>
-                        <p>Nouvelle version de l'outil de gestion sous Excel sécurisé et amélioré.</p>
+                        <h3 data-i18n="project_yambel_title">Application Yambel Toole</h3>
+                        <p data-i18n="project_yambel_text">Nouvelle version de l'outil de gestion sous Excel sécurisé et amélioré.</p>
                         <div class="project-tags">
                             <span>VBA</span>
                             <span>Excel</span>
                         </div>
-                        <a href="document/projets/yambel/yambel.zip" class="btn-project">Voir le projet <i
+                        <a href="document/projets/yambel/yambel.zip" class="btn-project" data-i18n="view_project">Voir le projet <i
                                 class="fas fa-arrow-right"></i></a>
                     </div>
                 </div> <!-- Projet de transfert d'argent Python -->
@@ -550,15 +550,15 @@
                         <img src="document/banque.png" alt="Application de transfert d'argent">
                     </div>
                     <div class="project-content">
-                        <h3>Application de transfert d'argent</h3>
-                        <p>Projet de gestion des transactions bancaires développé pendant les CPGE.L'application peut
+                        <h3 data-i18n="project_bank_app_title">Application de transfert d'argent</h3>
+                        <p data-i18n="project_bank_app_text">Projet de gestion des transactions bancaires développé pendant les CPGE. L'application peut
                             permettre de gérer les dépots, les retraits et les transferts et permet de voir l'historique
-                            des différentes opérations. </p>
+                            des différentes opérations.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>SQL</span>
                         </div>
-                        <a href="https://github.com/Ben10-som/Projet-gestion-banque---CPGE" class="btn-project">Voir le
+                        <a href="https://github.com/Ben10-som/Projet-gestion-banque---CPGE" class="btn-project" data-i18n="view_project">Voir le
                             projet <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -569,16 +569,15 @@
                         <img src="document/yambel.jpg" alt="Application de transfert d'argent avec VBA ">
                     </div>
                     <div class="project-content">
-                        <h3>Application de transfert d'argent </h3>
-                        <p>Ce Projet a été developpé en première année de cycle ingénieur pour aider les multi-services
-                            à mieux
-                            gérer leur transactions avec excel. </p>
+                        <h3 data-i18n="project_vba_title">Application de transfert d'argent</h3>
+                        <p data-i18n="project_vba_text">Ce Projet a été developpé en première année de cycle ingénieur pour aider les multi-services
+                            à mieux gérer leur transactions avec excel.</p>
                         <div class="project-tags">
                             <span>VBA</span>
                             <span>Excel</span>
                             <span>Tableau de bord </span>
                         </div>
-                        <a href="document/yambel.xlsm" class="btn-project">Voir le projet <i
+                        <a href="document/yambel.xlsm" class="btn-project" data-i18n="view_project">Voir le projet <i
                                 class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -590,13 +589,13 @@
     <section id="contact" class="section bg-dark">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Contactez-moi</h2>
-                <p class="section-subtitle">Travaillons ensemble</p>
+                <h2 class="section-title" data-i18n="contact_title">Contactez-moi</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Travaillons ensemble</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info reveal">
-                    <h3>Discutons de votre projet</h3>
-                    <p>Je suis ouvert aux opportunités de collaboration, que ce soit pour des projets de data science,
+                    <h3 data-i18n="contact_heading">Discutons de votre projet</h3>
+                    <p data-i18n="contact_description">Je suis ouvert aux opportunités de collaboration, que ce soit pour des projets de data science,
                         d'intelligence artificielle, d'analyse de données ou de développement.</p>
                     <div class="contact-details">
                         <div class="contact-item">
@@ -622,18 +621,18 @@
                 </div>
                 <form class="contact-form reveal" action="https://formspree.io/f/xvgkrgon" method="POST">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="text" name="name" placeholder="Votre nom" data-i18n-placeholder="contact_name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Votre email" required>
+                        <input type="email" name="email" placeholder="Votre email" data-i18n-placeholder="contact_email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" placeholder="Sujet">
+                        <input type="text" name="subject" placeholder="Sujet" data-i18n-placeholder="contact_subject">
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Votre message" required></textarea>
+                        <textarea name="message" placeholder="Votre message" data-i18n-placeholder="contact_message" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Envoyer le message <i
+                    <button type="submit" class="btn-primary" data-i18n="contact_submit">Envoyer le message <i
                             class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
@@ -646,20 +645,20 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="logo">SOMA<span>.</span></a>
-                    <p>Futur Data Scientist & Analyste passionné par la transformation des données en solutions.</p>
+                    <p data-i18n="footer_description">Futur Data Scientist & Analyste passionné par la transformation des données en solutions.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Liens rapides</h4>
+                    <h4 data-i18n="footer_links_title">Liens rapides</h4>
                     <ul>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#formations">Formations & Certif</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-i18n="footer_nav_about">À propos</a></li>
+                        <li><a href="#formations" data-i18n="footer_nav_educations">Formations & Certif</a></li>
+                        <li><a href="#skills" data-i18n="footer_nav_skills">Compétences</a></li>
+                        <li><a href="#projects" data-i18n="footer_nav_projects">Projets</a></li>
+                        <li><a href="#contact" data-i18n="footer_nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer_contact_title">Contact</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> somaben791@email.com</li>
                         <li><i class="fas fa-phone"></i>+22606464143/+221772840238</li>
